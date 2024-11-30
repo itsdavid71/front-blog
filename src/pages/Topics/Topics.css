@@ -1,0 +1,13 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topic-items {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 100px auto;
+}/*# sourceMappingURL=Topics.css.map */

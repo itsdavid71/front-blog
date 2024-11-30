@@ -1,0 +1,142 @@
+body {
+  background: #222;
+}
+.topic {
+  background: #ffffff14;
+  color: #fff;
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  button {
+    border: none;
+    background: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    font-size: 12px;
+    margin: 10px 0;
+    cursor: pointer;
+    min-width: 100px;
+  }
+  .delete {
+    background: #f53131;
+
+    &:hover {
+      background: #cb2d2d;
+    }
+  }
+  .add-comment {
+    background: rgb(27, 158, 27);
+    &:hover {
+      background: rgb(41, 114, 41);
+    }
+  }
+}
+
+.topic-post > .author {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+}
+
+.topic-post > .text {
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.topic-post > .date {
+  font-size: 12px;
+  opacity: 0.5;
+  text-align: left;
+}
+
+.comments {
+}
+.comments > .comment > .comments .comment {
+  padding: 20px;
+  background: #ffffff14;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.comments > .comment {
+  background: #0000000f;
+  text-align: left;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  padding: 20px;
+}
+.comments > .comment > .author {
+  font-weight: bold;
+}
+
+.comments > .comment > .text {
+  margin: 10px 0;
+}
+.comments > .comment > .date {
+  font-size: 12px;
+  opacity: 0.5;
+}
+.topic > p {
+  font-size: 14px;
+}
+
+.comment-answer {
+  padding: 10px;
+  margin: 10px 0;
+  background: #fcfcfc22;
+  border-radius: 10px;
+}
+
+.author {
+  font-weight: bold;
+  position: relative;
+  padding-left: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    background: rgb(228, 86, 16);
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    top: 0;
+  }
+}
+
+.text {
+  margin: 10px 0;
+}
+.date {
+  font-size: 12px;
+  opacity: 0.5;
+  text-align: right;
+}
+
+.comment {
+  position: relative;
+  transition: 0.2s;
+  &.hide {
+    .comment {
+      display: none;
+      opacity: 0;
+      height: 5px;
+    }
+  }
+}
+.hide-comments {
+  background: transparent;
+  position: absolute;
+  right: 10px;
+  border-radius: 5px;
+  top: 10px;
+  outline: none;
+  border: 1px solid #ffffff38;
+  color: #ffffff85;
+  cursor: pointer;
+}
